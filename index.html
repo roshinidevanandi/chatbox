@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main {
+        border: 2px solid;
+        height: 90px;
+        width: 490px;
+        background-color: rgb(97, 239, 97);
+        position: absolute;
+        top: 10px;
+        left: 510px;
+        border-radius: 20px;
+        
+        
+      }
+      .mycls {
+        border: 2px solid blue;
+        height: 600px;
+        width: 500px;
+        background-color: rgb(106, 106, 248);
+        margin-top: 100px;
+        margin-left: 500px;
+        border-radius: 20px;
+        overflow: auto;
+      }
+      
+      #sun {
+        border: 2px;
+        height: 20px;
+        width: 80px;
+        background-color: rgb(173, 166, 166);
+        text-align: center;
+        border-radius: 12px;
+        margin-left: 200px;
+        margin-top: 10px;
+        position: sticky;
+        top: 10px;
+      }
+
+      #a1 {
+        border: 2px;
+        height: 40px;
+        width: 50px;
+        background-color: aqua;
+        text-align: center;
+        border-radius: 12px;
+        margin-left: 430px;
+        margin-top: 10px;
+      }
+      #a2 {
+        border: 2px;
+        height: 40px;
+        width: 100px;
+        background-color: aqua;
+        text-align: center;
+        border-radius: 12px;
+        margin-left: 380px;
+        margin-top: 10px;
+      }
+      #a3 {
+        border: 2px;
+        height: 40px;
+        width: 40px;
+        background-color: white;
+        text-align: center;
+        border-radius: 12px;
+        margin-top: 10px;
+      }
+      #a4 {
+        border: 2px;
+        height: 40px;
+        width: 170px;
+        background-color: white;
+        text-align: center;
+        border-radius: 12px;
+        margin-top: 10px;
+      }
+      #a5 {
+        border: 2px;
+        height: 40px;
+        width: 225px;
+        background-color: aqua;
+        text-align: center;
+        border-radius: 12px;
+        margin-left: 255px;
+        margin-top: 10px;
+      }
+      #a6 {
+        border: 2px;
+        height: 40px;
+        width: 110px;
+        background-color: white;
+        text-align: center;
+        border-radius: 12px;
+        margin-top: 10px;
+      }
+      #mon {
+        border: 2px;
+        height: 20px;
+        width: 80px;
+        background-color: rgb(173, 166, 166);
+        text-align: center;
+        border-radius: 12px;
+        margin-left: 200px;
+        margin-top: 10px;
+        position: sticky;
+        top: 10px;
+      }
+      #a7 {
+        border: 2px;
+        height: 40px;
+        width: 205px;
+        background-color: aqua;
+        text-align: center;
+        border-radius: 12px;
+        margin-left: 275px;
+        margin-top: 10px;
+      }
+      #a8 {
+        border: 2px;
+        height: 40px;
+        width: 90px;
+        background-color: white;
+        text-align: center;
+        border-radius: 12px;
+        margin-top: 10px;
+      }
+      #a9 {
+        border: 2px;
+        height: 40px;
+        width: 125px;
+        background-color: aqua;
+        text-align: center;
+        border-radius: 12px;
+        margin-left: 355px;
+        margin-top: 10px;
+      }
+      #b1 {
+        border: 2px;
+        height: 40px;
+        width: 260px;
+        background-color: white;
+        text-align: center;
+        border-radius: 12px;
+        margin-top: 10px;
+      }
+      #b2 {
+        border: 2px;
+        height: 40px;
+        width: 205px;
+        background-color: aqua;
+        text-align: center;
+        border-radius: 12px;
+        margin-left: 275px;
+        margin-top: 10px;
+      }
+      #b3 {
+        border: 2px;
+        height: 40px;
+        width: 90px;
+        background-color: white;
+        text-align: center;
+        border-radius: 12px;
+        margin-top: 10px;
+      }
+      #tue {
+        border: 2px;
+        height: 20px;
+        width: 80px;
+        background-color: rgb(173, 166, 166);
+        text-align: center;
+        border-radius: 12px;
+        margin-left: 200px;
+        margin-top: 10px;
+        position: sticky;
+        top: 10px;
+      }
+      #b4 {
+        border: 2px;
+        height: 40px;
+        width: 50px;
+        background-color: white;
+        text-align: center;
+        border-radius: 12px;
+        margin-top: 10px;
+      }
+      #b5 {
+        border: 2px;
+        height: 40px;
+        width: 50px;
+        background-color: aqua;
+        text-align: center;
+        border-radius: 12px;
+        margin-left: 430px;
+        margin-top: 10px;
+      }
+      #b6 {
+        border: 2px;
+        height: 40px;
+        width: 150px;
+        background-color: white;
+        text-align: center;
+        border-radius: 12px;
+        margin-top: 10px;
+      }
+      #b7 {
+        border: 2px;
+        height: 40px;
+        width: 165px;
+        background-color: aqua;
+        text-align: center;
+        border-radius: 12px;
+        margin-left: 315px;
+        margin-top: 10px;
+      }
+      #b8 {
+        border: 2px;
+        height: 40px;
+        width: 200px;
+        background-color: white;
+        text-align: center;
+        border-radius: 12px;
+        margin-top: 10px;
+      }
+      #b9 {
+        border: 2px;
+        height: 40px;
+        width: 230px;
+        background-color: aqua;
+        text-align: center;
+        border-radius: 12px;
+        margin-left: 250px;
+        margin-top: 10px;
+      }
+      #wed {
+        border: 2px;
+        height: 20px;
+        width: 80px;
+        background-color: rgb(173, 166, 166);
+        text-align: center;
+        border-radius: 12px;
+        margin-left: 200px;
+        margin-top: 10px;
+        position: sticky;
+        top: 10px;
+      }
+      #c1 {
+        border: 2px;
+        height: 40px;
+        width: 230px;
+        background-color: aqua;
+        text-align: center;
+        border-radius: 12px;
+        margin-left: 250px;
+        margin-top: 10px;
+      }
+      #c2 {
+        border: 2px;
+        height: 40px;
+        width: 110px;
+        background-color: white;
+        text-align: center;
+        border-radius: 12px;
+        margin-top: 10px;
+      }
+      #c3 {
+        border: 2px;
+        height: 40px;
+        width: 280px;
+        background-color: aqua;
+        text-align: center;
+        border-radius: 12px;
+        margin-left: 200px;
+        margin-top: 10px;
+      }
+      #c4 {
+        border: 2px;
+        height: 40px;
+        width: 145px;
+        background-color: aqua;
+        text-align: center;
+        border-radius: 12px;
+        margin-left: 335px;
+        margin-top: 10px;
+      }
+      #c5 {
+        border: 2px;
+        height: 40px;
+        width: 90px;
+        background-color: white;
+        text-align: center;
+        border-radius: 12px;
+        margin-top: 10px;
+      }
+      #thur {
+        border: 2px;
+        height: 20px;
+        width: 80px;
+        background-color: rgb(173, 166, 166);
+        text-align: center;
+        border-radius: 12px;
+        margin-left: 200px;
+        margin-top: 10px;
+        position: sticky;
+        top: 10px;
+      }
+      #c6 {
+        border: 2px;
+        height: 40px;
+        width: 270px;
+        background-color: white;
+        text-align: center;
+        border-radius: 12px;
+        margin-top: 10px;
+      }
+      #c7 {
+        border: 2px;
+        height: 40px;
+        width: 310px;
+        background-color: aqua;
+        text-align: center;
+        border-radius: 12px;
+        margin-left: 170px;
+        margin-top: 10px;
+      }
+      #c8 {
+        border: 2px;
+        height: 40px;
+        width: 115px;
+        background-color: aqua;
+        text-align: center;
+        border-radius: 12px;
+        margin-left: 365px;
+        margin-top: 10px;
+      }
+      #c9 {
+        border: 2px;
+        height: 40px;
+        width: 210px;
+        background-color: aqua;
+        text-align: center;
+        border-radius: 12px;
+        margin-left: 270px;
+        margin-top: 10px;
+      }
+      #d1 {
+        border: 2px;
+        height: 40px;
+        width: 50px;
+        background-color: white;
+        text-align: center;
+        border-radius: 12px;
+        margin-top: 10px;
+      }
+      #d2 {
+        border: 2px;
+        height: 40px;
+        width: 105px;
+        background-color: white;
+        text-align: center;
+        border-radius: 12px;
+        margin-top: 10px;
+      }
+      #d3 {
+        border: 2px;
+        height: 40px;
+        width: 115px;
+        background-color: aqua;
+        text-align: center;
+        border-radius: 12px;
+        margin-left: 365px;
+        margin-top: 10px;
+      }
+      #d4 {
+        border: 2px;
+        height: 40px;
+        width: 60px;
+        background-color: white;
+        text-align: center;
+        border-radius: 12px;
+        margin-top: 10px;
+      }
+      #fri {
+        border: 2px;
+        height: 20px;
+        width: 80px;
+        background-color: rgb(173, 166, 166);
+        text-align: center;
+        border-radius: 12px;
+        margin-left: 200px;
+        margin-top: 10px;
+        position: sticky;
+        top: 10px;
+      }
+      #d5 {
+        border: 2px;
+        height: 40px;
+        width: 220px;
+        background-color: aqua;
+        text-align: center;
+        border-radius: 12px;
+        margin-left: 260px;
+        margin-top: 10px;
+      }
+      #d6 {
+        border: 2px;
+        height: 40px;
+        width: 280px;
+        background-color: aqua;
+        text-align: center;
+        border-radius: 12px;
+        margin-left: 200px;
+        margin-top: 10px;
+      }
+      #d7 {
+        border: 2px;
+        height: 40px;
+        width: 185px;
+        background-color: aqua;
+        text-align: center;
+        border-radius: 12px;
+        margin-left: 295px;
+        margin-top: 10px;
+      }
+      #d8 {
+        border: 2px;
+        height: 40px;
+        width: 125px;
+        background-color: white;
+        text-align: center;
+        border-radius: 12px;
+        margin-top: 10px;
+      }
+      #d9 {
+        border: 2px;
+        height: 40px;
+        width: 50px;
+        background-color: aqua;
+        text-align: center;
+        border-radius: 12px;
+        margin-left: 430px;
+        margin-top: 10px;
+      }
+      #e1 {
+        border: 2px;
+        height: 40px;
+        width: 155px;
+        background-color: white;
+        text-align: center;
+        border-radius: 12px;
+        margin-top: 10px;
+      }
+      #satur {
+        border: 2px;
+        height: 20px;
+        width: 80px;
+        background-color: rgb(173, 166, 166);
+        text-align: center;
+        border-radius: 12px;
+        margin-left: 200px;
+        margin-top: 10px;
+        position: sticky;
+        top: 10px;
+      }
+      #e2 {
+        border: 2px;
+        height: 40px;
+        width: 80px;
+        background-color: aqua;
+        text-align: center;
+        border-radius: 12px;
+        margin-left: 400px;
+        margin-top: 10px;
+      }
+      #e3 {
+        border: 2px;
+        height: 40px;
+        width: 115px;
+        background-color: aqua;
+        text-align: center;
+        border-radius: 12px;
+        margin-left: 365px;
+        margin-top: 10px;
+      }
+      #e4 {
+        border: 2px;
+        height: 40px;
+        width: 155px;
+        background-color: white;
+        text-align: center;
+        border-radius: 12px;
+        margin-top: 10px;
+      }
+      #e5 {
+        border: 2px;
+        height: 40px;
+        width: 215px;
+        background-color: white;
+        text-align: center;
+        border-radius: 12px;
+        margin-top: 10px;
+      }
+      #e6 {
+        border: 2px;
+        height: 30px;
+        width: 115px;
+        background-color: aqua;
+        text-align: center;
+        border-radius: 12px;
+        margin-top: 30px;
+      }
+      #e7 {
+        border: 2px;
+        height: 40px;
+        width: 180px;
+        background-color: white;
+        text-align: center;
+        border-radius: 12px;
+      }
+      #e8 {
+        border: 2px;
+        height: 40px;
+        width: 170px;
+        background-color: aqua;
+        text-align: center;
+        border-radius: 12px;
+        margin-left: 310px;
+        margin-top: 10px;
+      }
+      #e9 {
+        border: 2px;
+        height: 40px;
+        width: 110px;
+        background-color: white;
+        text-align: center;
+        border-radius: 12px;
+      }
+      h1{
+        color:rgb(38, 6, 6);
+        font-size: 40px;
+        text-align: center;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="main"><h1><I>WhatsApp</I></h1></div>
+    <div class="mycls">
+      <div id="sun">Sunday</div>
+      <div id="a1">Hello</div>
+      <div id="a2">Where are u ?</div>
+      <div id="a3">Hiii</div>
+      <div id="a4">I am in the playground</div>
+      <div id="a5">What are you doing over there ?</div>
+      <div id="a6">Playing game</div>
+      <div id="mon">Monday</div>
+      <div id="a7">With whom are u playing ?</div>
+      <div id="a8">My friends</div>
+      <div id="a9">Who are they ?</div>
+      <div id="b1">10th class friends (TINKUU GANG)</div>
+      <div id="b2">Which game are u playing ?</div>
+      <div id="b3">CRICKET</div>
+      <div id="tue">Tuesday</div>
+      <div id="b4">Hiiii</div>
+      <div id="b5">Hello</div>
+      <div id="b6">What are u doing ?</div>
+      <div id="b7">I am busy today......</div>
+      <div id="b8">In which work are u busy ?</div>
+      <div id="b9">I have to complete today's task</div>
+      <div id="wed">Wednesday</div>
+      <div id="c1">I am forgot to tell you one thing</div>
+      <div id="c2">What is that ?</div>
+      <div id="c3">I joined "10Kcoders" to enhance my skills</div>
+      <div id="c4">I am SORRY......</div>
+      <div id="c5">It's okay!!!</div>
+      <div id="thur">Thursday</div>
+      <div id="c6">Is It best Institute to improve SKILLS</div>
+      <div id="c7">YES It's best platform for software engineers</div>
+      <div id="c8">What doing ?</div>
+      <div id="d1">Ntg</div>
+      <div id="c9">Have u had your dinner ?</div>
+      <div id="d2">Yes and you ?</div>
+      <div id="d3">NO. I didn't</div>
+      <div id="d4">Why?</div>
+      <div id="fri">Friday</div>
+      <div id="d5">Are u asking simply why haa ?</div>
+      <div id="d6">I didn't eat yet.Still i am waiting for you</div>
+      <div id="d7">but u already had. Idiot</div>
+      <div id="d8">I am Sorry......</div>
+      <div id="d9">NO</div>
+      <div id="e1">I am Sorry Sorry......</div>
+      <div id="satur">Saturday</div>
+      <div id="e2">NO Ra</div>
+      <div id="e3">I hate you....</div>
+      <div id="e4">Sorry Ne Please aa</div>
+      <div id="e5">I never eat without telling you</div>
+      <div id="e6">I hate you....</div>
+      <div id="e7">But I love you forever.....</div>
+      <div id="e8">OK! Sorry accepted</div>
+      <div id="e9">Hmmm......</div>
+    </div>
+  </body>
+</html>
